@@ -50,8 +50,8 @@ jobs:
 
             # prepare the database
             - run: mkdir var/data
-            - run: touch var/data/test.sqlite
-            - run: php artisan migrate --env=testing --database=test --force
+#            - run: touch var/data/test.sqlite
+#            - run: php artisan migrate --env=test --database=test --force
 
             # run tests with phpunit or codecept
             - run: ./vendor/bin/phpunit
